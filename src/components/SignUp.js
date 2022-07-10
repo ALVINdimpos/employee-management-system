@@ -28,6 +28,7 @@ function SignUp() {
    }
  async function submitHandler(e){
   e.preventDefault();
+  
    const data={
      userName,
      Postion,
