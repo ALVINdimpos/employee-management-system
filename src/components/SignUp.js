@@ -27,7 +27,7 @@ function SignUp() {
      setPassword(e.target.value)
    }
  async function submitHandler(e){
-  e.preventDefault();
+
   
    const data={
      userName,

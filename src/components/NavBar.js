@@ -11,6 +11,7 @@ import './NavBar.css';
 export default function App() {
   return (
     <>
+    <div className='navBar'>
       <MDBNavbar light bgColor='light'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
@@ -42,6 +43,7 @@ export default function App() {
           </MDBNavbarBrand>
         </MDBContainer>
       </MDBNavbar>
+      </div>
     </>
   );
 }
