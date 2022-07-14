@@ -5,13 +5,16 @@ import {
   MDBNavbar,
   MDBNavbarBrand
 } from 'mdb-react-ui-kit';
+import Navbar from 'react-bootstrap/Navbar';
 import Logo from './Logo.png'
 import './NavBar.css';
 
 export default function App() {
+
+  
   return (
-    <>
-    <div className='navBar'>
+  
+    <Navbar fixed="top" expand="lg" style={{color: 'red',padding:0}}>
       <MDBNavbar light bgColor='light'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
@@ -31,7 +34,7 @@ export default function App() {
             <div className='nav_items'>
               <ul>
                 <div>
-                  <li><a href="Admin">Sign In</a></li>
+                  <li><a href="Admin">Admin</a></li>
                   <li><a href="Employee">Register</a></li>
                   <li><a href="Home">Home</a></li>
                 </div>
@@ -43,7 +46,7 @@ export default function App() {
           </MDBNavbarBrand>
         </MDBContainer>
       </MDBNavbar>
-      </div>
-    </>
+      </Navbar>
+    
   );
 }

@@ -4,21 +4,23 @@
     font-weight: bold;
     position: sticky;
     
+    
 }
-.navBar{
-  
-}
+
 .nav_items{
     float: right;
     font-weight: bolder;
+    margin-right: 10px;
 
 }
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: auto;
+    width:1;
     float: right;
+    margin-right: 103px;
+
 }
 li {
     float: right;

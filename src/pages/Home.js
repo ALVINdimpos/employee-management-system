@@ -10,10 +10,15 @@ function Home() {
     e.preventDefault();
     navigate('/Employee');
   }
+  const empHandler=(e)=>{
+    e.preventDefault();
+    navigate('/EmpDashboard');
+  }
   return (
     <div>
 
     <NavBar></NavBar> 
+    
     <div className="container right-panel-active">
   {/* Sign Up */}
   <div className="container__form container--signin">
@@ -22,7 +27,7 @@ function Home() {
       <input type="email" placeholder="Email" className="input" />
       <input type="password" placeholder="Password" className="input" />
       <a href="#" className="link">Forgot your password?</a>
-      <button className="btn">Sign In</button>
+      <button className="btn" onClick={empHandler}>Sign In</button>
       
     </form>
   </div>
@@ -31,11 +36,11 @@ function Home() {
   {/* Overlay */}
   <div className="container__overlay">
     <div className="overlay">
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Welcome!</h1>
       <div className="overlay__panel overlay--left">
-        
-       <h3>Lorem ipsum dolor sit amet, consec tetur adipisicing
-          elit, sed do eiusmod tempor incididuntut consec tetur 
-          adipisicing elit,Lorem ipsum dolor sit amet.</h3>
+      
           <button className="btn" onClick={getHandler}>Get started</button>
       </div>
   

@@ -102,7 +102,7 @@ if(e.target.value.length===0) window.location.reload()
   return (
     <div>
      <Signout></Signout>
-
+     <h1></h1>
       <div className="containerA">
         <h2> There are {posts.length} Employee in the Database </h2>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -7,6 +7,7 @@ import {
 } from 'mdb-react-ui-kit';
 import Logo from './Logo.png'
 import './NavBar.css';
+import NavBar from 'react-bootstrap/Navbar';
 
 export default function App() {
     const signoutHandler=()=>{
@@ -16,6 +17,7 @@ export default function App() {
     }
   return (
     <>
+    <NavBar  fixed="top" expand="lg" style={{color: 'red',padding:0}} >
       <MDBNavbar light bgColor='light'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
@@ -47,6 +49,7 @@ export default function App() {
           </MDBNavbarBrand>
         </MDBContainer>
       </MDBNavbar>
+      </NavBar>
     </>
   );
 }

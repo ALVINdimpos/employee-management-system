@@ -80,7 +80,9 @@ const handleOpenModal=()=>{
   return (
     <div>
       <NavBar></NavBar>
-
+      <div>
+        <h1></h1> 
+      </div>
       <div className="containerA">
         <h2> There are {tasks.length} Task in the Database </h2>
         <button type="submit" onClick={handleOpenModal} className={openModal? "btn btn-danger":"btn btn-primary"}>
